@@ -1,0 +1,31 @@
+.line-item {
+  border-top: 1px solid #414144;
+}
+
+.table {
+  width: 100%;
+  padding-left: 1.25rem;
+}
+
+.table thead th {
+  text-align: start;
+  height: 2.75rem;
+  color: #a1a1aa;
+  font-size: 14px;
+  font-weight: 400;
+}
+.table tbody td {
+  text-align: start;
+  height: 3.25rem;
+  cursor: pointer;
+}
+
+.input-row {
+  background-color: #202124;
+  border: 1px solid #414144;
+  color: #71717a;
+  width: 90%;
+  border-radius: 4px;
+  height: 1.75rem;
+  padding-left: 0.5rem;
+}

@@ -1,0 +1,13 @@
+.tabs {
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 0.625rem 1rem;
+  margin-top: 1rem;
+  .active {
+    border-bottom: 2px solid #fff;
+    margin-top: 1rem;
+  }
+}

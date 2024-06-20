@@ -1,0 +1,17 @@
+.wrapper-main {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  background: var(--background-color-main);
+  margin-left: 1px;
+  margin-top: 1px;
+}
+
+.list-expenses {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.loading {
+  margin-top: 1.875rem;
+}
