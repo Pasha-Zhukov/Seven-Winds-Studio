@@ -1,11 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { AppState } from "./redux.types";
+
+const initialState: AppState = {
+  disableButton: false,
+  dataList: [],
+};
 
 const appStateSlice = createSlice({
   name: "appState",
-  initialState: {
-    disableButton: false,
-    dataList: [],
-  },
+  initialState: initialState,
   reducers: {
     disableButton: (state, action) => {
       state.disableButton = action.payload;

@@ -1,10 +1,10 @@
 export interface item {
   id: number;
   rowName: string;
-  total: number;
+  total?: number;
   salary: number;
   mimExploitation: number;
-  machineOperatorSalary: number;
+  machineOperatorSalary?: number;
   materials: number;
   mainCosts: number;
   supportCosts: number;
@@ -14,4 +14,5 @@ export interface item {
   child: item[];
   isEditing?: boolean;
   idParent?: number;
+  parentId?: number | null;
 }

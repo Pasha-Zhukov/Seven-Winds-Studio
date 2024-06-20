@@ -3,10 +3,10 @@ import { item } from "../shared/interfaces/item.interface";
 export default function createRowLocal(
   id: number,
   parentArray: item[],
-  dispatch: any,
-  dataList: any,
-  disableButton: any
-) {
+  dispatch: React.Dispatch<any>,
+  dataList: React.Dispatch<React.SetStateAction<item[]>>,
+  disableButton: React.Dispatch<React.SetStateAction<boolean>>
+): void {
   if (!id) {
     dispatch(disableButton(true));
     dispatch(
@@ -22,6 +22,7 @@ export default function createRowLocal(
           parentId: null,
           rowName: "",
           salary: 0,
+          child: [],
           supportCosts: 0,
           isEditing: true,
           id: 1,
