@@ -15,7 +15,7 @@ const ChildMainContent: React.FC<ChildMainContentProps> = ({
     <>
       <tbody>
         <tr>
-          <td>
+          <td className="line-item">
             <div key={item.id} style={{ marginLeft: `${nestingLevel * 20}px` }}>
               <ChildMainContentButtonGroup itemId={item.id} />
             </div>
