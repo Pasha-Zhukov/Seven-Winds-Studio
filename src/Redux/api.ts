@@ -14,25 +14,6 @@ export const api = createApi({
         body: data,
       }),
     }),
-    createStartRow: builder.mutation({
-      query: () => ({
-        url: `/v1/outlay-rows/entity/${EID}/row/create`,
-        method: "POST",
-        body: {
-          equipmentCosts: 0,
-          estimatedProfit: 0,
-          machineOperatorSalary: 0,
-          mainCosts: 0,
-          materials: 0,
-          mimExploitation: 0,
-          overheads: 0,
-          parentId: null,
-          rowName: "",
-          salary: 0,
-          supportCosts: 0,
-        },
-      }),
-    }),
     updateRow: builder.mutation({
       query: ({ rID, updatedData }) => ({
         url: `/v1/outlay-rows/entity/${EID}/row/${rID}/update`,
@@ -51,7 +32,6 @@ export const api = createApi({
 
 export const {
   useFetchEntityDataQuery,
-  useCreateStartRowMutation,
   useCreateRowMutation,
   useUpdateRowMutation,
   useDeleteRowMutation,
